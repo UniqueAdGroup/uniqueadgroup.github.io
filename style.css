@@ -3187,3 +3187,97 @@ height:44px;
 }
 
 }
+/*=====================================
+PORTFOLIO FILTER
+=====================================*/
+
+.portfolio-filter{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+margin-bottom:50px;
+
+}
+
+.filter-btn{
+
+padding:14px 26px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ffffff;
+
+cursor:pointer;
+
+font-weight:600;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.filter-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.filter-btn.active{
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary));
+
+color:#fff;
+
+}
+
+.project{
+
+transition:
+opacity .3s,
+transform .3s;
+
+}
+
+/*=====================================
+RIPPLE EFFECT
+=====================================*/
+
+.ripple{
+
+position:absolute;
+
+border-radius:50%;
+
+transform:scale(0);
+
+background:rgba(255,255,255,.45);
+
+pointer-events:none;
+
+animation:rippleAnimation .6s linear;
+
+}
+
+@keyframes rippleAnimation{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
