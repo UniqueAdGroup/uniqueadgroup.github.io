@@ -1,76 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<title>Unique Ad Group - Software Development Company</title>
+<title>Resume Upload Portal | Get Hired Faster</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description"
+content="Upload your Resume or CV without Signup and get job opportunities on WhatsApp.">
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="keywords"
+content="Resume Upload,CV Upload,Jobs,WhatsApp Jobs,Career">
 
-<link rel="stylesheet" href="/style.css">
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
+
+<!-- Loading Screen -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+<h2>Loading...</h2>
+
+</div>
+
+<!-- Navigation -->
 
 <header>
 
 <nav class="navbar">
 
 <div class="logo">
-<img src="images/logo.png" alt="">
-<h2>Unique Ad Group</h2>
+
+<i class="fa-solid fa-file-arrow-up"></i>
+
+<span>ResumeConnect</span>
+
 </div>
 
-<ul class="nav-links">
+<ul>
 
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#pricing">Pricing</a></li>
+<li><a href="#">Home</a></li>
+
+<li><a href="#upload">Upload</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
 <li><a href="#contact">Contact</a></li>
 
 </ul>
-
-<button class="btn">Let's Talk</button>
 
 </nav>
 
 </header>
 
-<!-- HERO -->
+<!-- Hero Section -->
 
-<section class="hero" id="home">
+<section class="hero">
 
 <div class="hero-left">
 
 <h1>
-We Build Amazing Software
-With Cartoon Creativity
+
+Upload Your Resume
+
+<span>Get Hired Faster</span>
+
 </h1>
 
 <p>
 
-Custom Desktop Applications,
-Web Applications,
-Mobile Apps,
-AI Solutions,
-Cloud Software
-for startups and businesses.
+No Signup.
+
+No Login.
+
+Just upload your Resume and receive job updates on WhatsApp.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="#" class="primary-btn">Get Started</a>
+<a href="#upload"
+class="primary-btn">
 
-<a href="#" class="secondary-btn">View Portfolio</a>
+Upload Resume
+
+</a>
+
+<a href="#features"
+class="secondary-btn">
+
+Learn More
+
+</a>
 
 </div>
 
@@ -78,403 +123,361 @@ for startups and businesses.
 
 <div class="hero-right">
 
-<img src="images/hero.svg">
+<img
+src="assets/hero.svg"
+alt="Resume Illustration">
 
 </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- Upload Section -->
 
-<section id="about">
+<section
+id="upload"
+class="upload-section">
 
-<h2>About Us</h2>
+<div class="upload-card">
+
+<h2>
+
+Upload Resume / CV
+
+</h2>
 
 <p>
 
-We are a creative software development company
-building modern applications using colorful
-cartoon illustrations and user-friendly designs.
+Supported Files
+
+PDF
+
+DOC
+
+DOCX
+
+(Max 10MB)
 
 </p>
 
-<div class="about-grid">
+<div
+id="dropArea"
+class="drop-area">
 
-<div class="card">
-<h3>Mission</h3>
-<p>Create software everyone loves.</p>
-</div>
+<i
+class="fa-solid fa-cloud-arrow-up"></i>
 
-<div class="card">
-<h3>Vision</h3>
-<p>Make technology fun and accessible.</p>
-</div>
+<h3>
 
-<div class="card">
-<h3>Experience</h3>
-<p>100+ Successful Projects</p>
-</div>
+Drag & Drop Resume
 
-</div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="service-grid">
-
-<div class="service-card">
-<img src="images/web.svg">
-<h3>Web Development</h3>
-<p>Modern responsive websites.</p>
-</div>
-
-<div class="service-card">
-<img src="images/mobile.svg">
-<h3>Mobile Apps</h3>
-<p>Android and iOS applications.</p>
-</div>
-
-<div class="service-card">
-<img src="images/desktop.svg">
-<h3>Desktop Apps</h3>
-<p>GTK, Windows, Linux and macOS.</p>
-</div>
-
-<div class="service-card">
-<img src="images/cloud.svg">
-<h3>Cloud Solutions</h3>
-<p>Scalable cloud software.</p>
-</div>
-
-<div class="service-card">
-<img src="images/ai.svg">
-<h3>Artificial Intelligence</h3>
-<p>Smart AI powered systems.</p>
-</div>
-
-<div class="service-card">
-<img src="images/support.svg">
-<h3>Maintenance</h3>
-<p>24/7 support and upgrades.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- TECHNOLOGIES -->
-
-<section id="technologies">
-
-<h2>Technologies</h2>
-
-<div class="tech-list">
-
-<span>HTML5</span>
-
-<span>CSS3</span>
-
-<span>JavaScript</span>
-
-<span>React</span>
-
-<span>Node.js</span>
-
-<span>Python</span>
-
-<span>Java</span>
-
-<span>C</span>
-
-<span>GTK4</span>
-
-<span>MySQL</span>
-
-<span>MongoDB</span>
-
-<span>Docker</span>
-
-</div>
-
-</section>
-
-<!-- PROCESS -->
-
-<section id="process">
-
-<h2>Development Process</h2>
-
-<div class="timeline">
-
-<div>1. Idea</div>
-
-<div>2. Design</div>
-
-<div>3. Development</div>
-
-<div>4. Testing</div>
-
-<div>5. Deployment</div>
-
-<div>6. Support</div>
-
-</div>
-
-</section>
-
-<!-- PORTFOLIO -->
-
-<section id="portfolio">
-
-<h2>Recent Projects</h2>
-
-<div class="portfolio-grid">
-
-<div class="project">
-
-<img src="images/project1.jpg">
-
-<h3>E-Commerce Platform</h3>
-
-</div>
-
-<div class="project">
-
-<img src="images/project2.jpg">
-
-<h3>ERP System</h3>
-
-</div>
-
-<div class="project">
-
-<img src="images/project3.jpg">
-
-<h3>Desktop Accounting</h3>
-
-</div>
-
-<div class="project">
-
-<img src="images/project4.jpg">
-
-<h3>Hospital Management</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TEAM -->
-
-<section id="team">
-
-<h2>Meet Our Team</h2>
-
-<div class="team-grid">
-
-<div class="member">
-
-<img src="images/member1.png">
-
-<h3>Alex</h3>
-
-<p>Frontend Developer</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member2.png">
-
-<h3>Emma</h3>
-
-<p>Backend Developer</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member3.png">
-
-<h3>David</h3>
-
-<p>UI Designer</p>
-
-</div>
-
-<div class="member">
-
-<img src="images/member4.png">
-
-<h3>Sophia</h3>
-
-<p>Project Manager</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section id="testimonials">
-
-<h2>Testimonials</h2>
-
-<div class="testimonial">
+</h3>
 
 <p>
 
-★★★★★
-
-Amazing team with creative ideas.
+or
 
 </p>
 
-<h4>- Happy Client</h4>
+<label
+for="resume">
+
+Choose File
+
+</label>
+
+<input
+type="file"
+id="resume"
+
+accept=".pdf,.doc,.docx"
+
+hidden>
+
+</div>
+
+<div class="selected-file">
+
+<span id="fileName">
+
+No file selected
+
+</span>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+WhatsApp Number
+
+</label>
+
+<input
+
+type="tel"
+
+id="whatsapp"
+
+placeholder="+91 9876543210"
+
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Full Name (Optional)
+
+</label>
+
+<input
+
+type="text"
+
+id="fullname"
+
+placeholder="Enter your name">
+
+</div>
+
+<button
+id="uploadBtn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Upload Resume
+
+</button>
+
+<div
+class="progress-box">
+
+<div
+id="progressBar">
+
+</div>
+
+</div>
+
+<p
+id="status">
+
+Waiting for upload...
+
+</p>
 
 </div>
 
 </section>
 
-<!-- PRICING -->
+<!-- Features section starts in Part 2 -->
 
-<section id="pricing">
+<script src="script.js"></script>
 
-<h2>Pricing</h2>
+</body>
 
-<div class="pricing-grid">
+</html>
+<!-- =========================
+     FEATURES SECTION
+========================= -->
+<section id="features" class="features">
 
-<div class="plan">
+    <div class="section-title">
+        <h2>Why Choose ResumeConnect?</h2>
+        <p>Your resume reaches recruiters quickly and securely.</p>
+    </div>
 
-<h3>Starter</h3>
+    <div class="feature-grid">
 
-<h1>$499</h1>
+        <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure Upload</h3>
+            <p>Your resume is stored securely in Google Drive.</p>
+        </div>
 
-<ul>
+        <div class="feature-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Fast Processing</h3>
+            <p>Submit your CV within seconds.</p>
+        </div>
 
-<li>Landing Page</li>
+        <div class="feature-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>WhatsApp Updates</h3>
+            <p>Receive job opportunities directly on WhatsApp.</p>
+        </div>
 
-<li>Responsive</li>
+        <div class="feature-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Recruiter Access</h3>
+            <p>Your profile becomes available to recruiters.</p>
+        </div>
 
-<li>Support</li>
+    </div>
 
-</ul>
+</section>
 
-<button>Choose</button>
+<!-- =========================
+     HOW IT WORKS
+========================= -->
 
+<section class="steps">
+
+    <div class="section-title">
+
+        <h2>How It Works</h2>
+
+    </div>
+
+    <div class="steps-grid">
+
+        <div class="step">
+            <span>1</span>
+            <h3>Select Resume</h3>
+            <p>Choose your Resume or CV.</p>
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            <h3>Enter WhatsApp</h3>
+            <p>Add your WhatsApp number.</p>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <h3>Upload</h3>
+            <p>Your resume is uploaded to Google Drive.</p>
+        </div>
+
+        <div class="step">
+            <span>4</span>
+            <h3>Get Job Updates</h3>
+            <p>Recruiters contact you on WhatsApp.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Resumes Uploaded</p>
 </div>
 
-<div class="plan featured">
-
-<h3>Professional</h3>
-
-<h1>$1999</h1>
-
-<ul>
-
-<li>Business Website</li>
-
-<li>Admin Panel</li>
-
-<li>Database</li>
-
-</ul>
-
-<button>Choose</button>
-
+<div class="stat">
+<h2>1000+</h2>
+<p>Recruiters</p>
 </div>
 
-<div class="plan">
-
-<h3>Enterprise</h3>
-
-<h1>Custom</h1>
-
-<ul>
-
-<li>Unlimited Features</li>
-
-<li>Cloud</li>
-
-<li>Support</li>
-
-</ul>
-
-<button>Contact</button>
-
+<div class="stat">
+<h2>95%</h2>
+<p>Success Rate</p>
 </div>
 
+<div class="stat">
+<h2>24×7</h2>
+<p>Availability</p>
 </div>
 
 </section>
 
-<!-- CONTACT -->
+<!-- =========================
+     FAQ
+========================= -->
 
-<section id="contact">
+<section id="faq" class="faq">
 
-<h2>Contact Us</h2>
+<div class="section-title">
 
-<form>
+<h2>Frequently Asked Questions</h2>
 
-<input type="text" placeholder="Name">
+</div>
 
-<input type="email" placeholder="Email">
+<div class="faq-item">
+<h3>Is signup required?</h3>
+<p>No. You can upload directly without creating an account.</p>
+</div>
 
-<input type="text" placeholder="Company">
+<div class="faq-item">
+<h3>Which file types are accepted?</h3>
+<p>PDF, DOC and DOCX files up to 10 MB.</p>
+</div>
 
-<textarea placeholder="Message"></textarea>
+<div class="faq-item">
+<h3>How will I receive job updates?</h3>
+<p>Through your WhatsApp number.</p>
+</div>
 
-<button>Send Message</button>
-
-</form>
+<div class="faq-item">
+<h3>Where is my resume stored?</h3>
+<p>Securely in Google Drive.</p>
+</div>
 
 </section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+
+<h2>Need Help?</h2>
+
+<p>We're here to assist you.</p>
+
+</div>
+
+<a href="https://wa.me/919876543210" class="primary-btn">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Contact Support
+
+</a>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-<div class="footer-content">
+<div class="footer-logo">
 
-<h2>CartoonDev</h2>
-
-<p>
-
-Creative Software Development Company
-
-</p>
-
-<div class="social">
-
-<a href="#">Facebook</a>
-
-<a href="#">LinkedIn</a>
-
-<a href="#">GitHub</a>
-
-<a href="#">Instagram</a>
+ResumeConnect
 
 </div>
 
 <p>
 
-© 2026 CartoonDev
+© 2026 ResumeConnect. All Rights Reserved.
 
 </p>
+
+<div class="footer-links">
+
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="terms.html">Terms & Conditions</a>
 
 </div>
 
 </footer>
 
-<script src="/app.js"></script>
+<button id="backToTop">
 
-</body>
+<i class="fa-solid fa-arrow-up"></i>
 
-</html>
+</button>
