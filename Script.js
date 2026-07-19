@@ -2,7 +2,6 @@
    ResumeConnect - script.js (Part 4A)
 ========================================== */
 
-const loader = document.getElementById("loader");
 const dropArea = document.getElementById("dropArea");
 const fileInput = document.getElementById("resume");
 const fileName = document.getElementById("fileName");
@@ -19,11 +18,6 @@ let selectedFile = null;
    Loader
 ------------------------------ */
 
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        loader.style.display = "none";
-    }, 800);
-});
 
 /* ------------------------------
    Drag & Drop
