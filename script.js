@@ -1,27 +1,38 @@
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
-
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+const WEB_APP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
 const form = document.getElementById("contactForm");
 const success = document.getElementById("success");
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+    const btn = form.querySelector("button");
+    btn.disabled = true;
+    btn.textContent = "Sending...";
 
-    if(name==="" || email==="" || message===""){
-        alert("Please fill all fields.");
-        return;
+    const data = {
+        name: document.getElementById("name").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        message: document.getElementById("message").value.trim()
+    };
+
+    try {
+        const response = await fetch(WEB_APP_URL, {
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.text();
+
+        success.textContent = result;
+        success.style.color = "green";
+        form.reset();
+
+    } catch (err) {
+        success.textContent = "❌ Failed to send message.";
+        success.style.color = "red";
     }
 
-    success.innerHTML = "✅ Thank you! Your message has been sent successfully.";
-    success.style.color = "green";
-
-    form.reset();
+    btn.disabled = false;
+    btn.textContent = "Send Message";
 });
