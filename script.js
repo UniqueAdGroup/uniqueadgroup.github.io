@@ -1,4 +1,4 @@
-const WEB_APP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyOw4sQPiVAxBqbUiSkjVoOGab0Y5juVZng5d9GqdYvN6vzCMvjZv-0Ew-dR7C4P2tmOA/exec";
 
 const form = document.getElementById("contactForm");
 const success = document.getElementById("success");
