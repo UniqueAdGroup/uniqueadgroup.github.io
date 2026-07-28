@@ -3,7 +3,7 @@ function doPost(e) {
   const data = JSON.parse(e.postData.contents);
 
   MailApp.sendEmail({
-    to: "ujjwalanurag@uniqueadgroup.com", // Change to your email
+    to: "ujjwalanurag@uniqueadgroup.company", // Change to your email
     replyTo: data.email,
     subject: "New Contact Form Submission",
     htmlBody:
